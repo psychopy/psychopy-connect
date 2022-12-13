@@ -15,7 +15,7 @@ __version__ = '0.0.1'
 #
 
 from .serialdevice import SerialDevice
-from .parallel import setPortAddress, setPin, setData
+from .parallel import ParallelPort, setPortAddress, setPin, setData, readPin
 
 # ------------------------------------------------------------------------------
 # Components for Builder
