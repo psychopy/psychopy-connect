@@ -38,6 +38,9 @@ dependencies = [
 [tool.setuptools.packages.find]
 where = ["",]
 
+[tool.setuptools.package-data]
+"*" = ["*.png",]
+
 [project.entry-points."psychopy.experiment.components"]
 SerialOutComponent = "psychopy_connect:SerialOutComponent"
 ParallelOutComponent = "psychopy_connect:ParallelOutComponent"

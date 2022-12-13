@@ -15,7 +15,17 @@ __version__ = '0.0.1'
 #
 
 from .serialdevice import SerialDevice
-from .parallel import ParallelPort, setPortAddress, setPin, setData, readPin
+from .parallel import (
+    ParallelPort,
+    setPortAddress,
+    setPin,
+    setData,
+    readPin)
+
+# platform-specific drivers, make them available since need them
+from .parallel._linux import PParallelLinux
+from .parallel._inpout import PParallelInpOut
+from .parallel._dlportio import PParallelDLPortIO
 
 # ------------------------------------------------------------------------------
 # Components for Builder
