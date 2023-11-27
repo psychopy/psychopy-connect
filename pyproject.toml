@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "psychopy-connect"
-version = "0.0.1"
+version = "0.0.2"
 description = "Extension package for adding support to PsychoPy for connectivity i.e. serial and parallel ports."
 readme = "README.md"
 requires-python = ">= 3.7"
